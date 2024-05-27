@@ -15,8 +15,8 @@ input {
   position: relative;
   width: 100%;
   background-image: linear-gradient(
-            rgba(35, 54, 34, 0.9),
-            rgba(24, 52, 30, 0.5)),
+    rgba(35, 54, 34, 0.6),
+    rgba(4, 77, 68, 0.8)),
             url(img/FONDOINICIO.png);
   background-size: cover;
   min-height: 100vh;
@@ -402,4 +402,9 @@ form.sign-in-form {
     bottom: 28%;
     left: 50%;
   }
+}
+
+.error-mensaje{
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

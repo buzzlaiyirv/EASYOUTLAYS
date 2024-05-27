@@ -3,34 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iniciar Sesion y Crear Cuenta</title>
-
-    <link rel="stylesheet" type="text/css" href="styles/inicioycreacion.css" />
-    
+    <title>Easy-Outlays Cuenta</title>
+    <link rel="stylesheet" type="text/css" href="../cssEasy/registro.css" />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-  
+    
+    <style>
+      .color{
+        color: #044d44;
+      }
+    </style>
   </head>
   <body>
-
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
 
-          <form action="" class="sign-in-form">
-            <h2 class="title">Iniciar Seción</h2>
+          <!--Inicio de formularios-->
+
+          <!--INICIAR SESIÓN-->
+          <form action="" class="sign-in-form" id="sign-in-form1">
+            <h2 class="title">Iniciar Sesión</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuario" />
+              <input type="text" placeholder="Usuario" id="usuario"/>
             </div>
+            
+            <!--MENSAJE DE ERROR DEL USUARIO-->
+
+            <span class="error-mensaje" id="usuario-error"></span>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Contraseña" id="contraseña" />
             </div>
-            <input type="submit" value="Iniciar " class="btn solid" />
 
+            <!--MENSAJE DE ERROR DE LA CONTRASEÑA-->
+
+            <span class="error-mensaje" id="contraseña-error"></span>
+            <input type="submit" value="Iniciar " class="btn solid" />
             <p class="social-text">Siguenos en nuestras redes sociales</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -48,23 +60,35 @@
             </div>
           </form>
 
+          <!--FIN DEL INICIO DE SESIÓN-->
 
-          <form action="" class="sign-up-form">
+          <!--REGISTRO DE SESIÓN-->
+          <form action="" class="sign-up-form" id="sign-up-form">
             <h2 class="title">Registrarte</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nombre de Usuario" />
+              <input type="text" placeholder="Nombre de Usuario" id="nombreU"/>
             </div>
+            <span class="error-mensaje" id="nombreU-error"></span>
+
+            <!--MENSAJE ERROR USUARIO-->
+
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="email"/>
             </div>
+            <span class="error-mensaje" id="email-error"></span>
+            <!--ERROR EMAIL-->
+
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="text" placeholder="Contraseña" id="contra"/>
             </div>
-            <input type="submit" value="Registrarte" class="btn solid" />
+            <span class="error-mensaje" id="contra-error"></span>
 
+            <!--ERRROR CONTRASEÑA-->
+
+            <input type="submit" value="Registrarte" class="btn solid" />
             <p class="social-text">Siguenos en nuestras redes</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -81,31 +105,34 @@
               </a>
             </div>
           </form>
+          <!--PARTE DEL INICIO DE SESIÓN-->
         </div>
       </div>
+
+      <!-- Inicio de paneles y fin de formularios-->   
       <div class="panels-container">
 
         <div class="panel left-panel">
             <div class="content">
-                <h3 style="color: #044d44;">Eres nuevo???</h3>
-                <p style="color: #044d44;">Crea una cuenta rapidamente para disfrutar de nuestros servivios</p>
-                <button class="btn transparent" id="sign-up-btn"><p style="color: #044d44;">Registrarte</p></button>
+                <h3 class="color">¿Eres nuevo?</h3>
+                <p class="color">Crea una cuenta para disfutar todo lo que te puede ofrecer Easy-Outlays</p>
+                <button class="btn transparent" id="sign-up-btn"><p class="color">Registrarte</p></button>
             </div>
             <img src="./img/log.svg" class="image" alt="">
         </div>
 
         <div class="panel right-panel">
             <div class="content">
-                <h3 style="color: #044d44;">Eres uno de nosotros????</h3>
-                <p style="color: #044d44;">Si ya tienes una cuenta solo inicia secion</p>
-                <button class="btn transparent" id="sign-in-btn"><p style="color: #044d44;">Iniciar Sesión</p></button>
+                <h3 class="color">¿Eres uno de nosotros?</h3>
+                <p class="color">Si ya tienes una cuenta, iniciala para seguir disfrutando de Easy-Outlyas </p>
+                <button class="btn transparent" id="sign-in-btn"><p class="color">Iniciar Sesion</p></button>
             </div>
             <img src="./img/register.svg" class="image" alt="">
-            
         </div>
       </div>
     </div>
+    <!--Div del container principal-->
 
-    <script src="./app.js"></script>
+    <script src="../jsEasy/sesion-re.js"></script>
   </body>
 </html>
