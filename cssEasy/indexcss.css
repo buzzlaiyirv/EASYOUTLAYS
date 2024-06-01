@@ -35,14 +35,14 @@ body{
 
     font-size: 25px;
     padding: 25px;
-    color: #d4deb4;
+    color:  #033d36;
     display: block;
     font-weight: 600;
 }
 
 
 .menu .navbar ul li a:hover{
-    color: #E0E4D3;
+    color: #d4deb4;
 }
 
 .header-content{
@@ -180,3 +180,62 @@ body{
     border-color: #82A682;
   }
 
+  
+  .txtgrid{
+    color: #E7EEE6;
+    padding: 1PX;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.txtgrid h5{
+    font-size: 25px;
+    line-height: 10px;
+    color: #033d36;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.txtgrid p{
+    font-size: 17px;
+}
+
+.grid{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    width: 90%;
+    height: 260px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 10% 10% 10%;
+    gap: 65px;
+    text-align: center;
+}
+
+.easy2 {
+
+    background-image: linear-gradient(
+        rgba(130, 166, 130, 0.7),
+         rgba(68, 102, 75, 0.9)),
+        url(img/FONDO\ INFO.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 70px 0;
+        min-height: 70vh;
+
+}
+
+.easy2-content{
+
+    text-align: center;
+}
+
+.easy2-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #033d36;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
